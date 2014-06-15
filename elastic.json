@@ -1,0 +1,8 @@
+{
+  "elastic": {
+    "host": "myserver.example.com:9200",
+    "timeout": 1,
+    "index": "sensu",
+    "type": "metrics"
+  }
+}
