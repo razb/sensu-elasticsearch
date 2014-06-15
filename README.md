@@ -1,4 +1,4 @@
-# sensu-lasticsearch
+# sensu-elasticsearch
 
 This repository contains a Sensu extension for [Elasticsearch](http://elasticsearch.org):
 
