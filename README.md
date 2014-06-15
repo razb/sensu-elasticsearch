@@ -1,6 +1,22 @@
 # sensu-elasticsearch
 
 This repository contains a Sensu extension for [Elasticsearch](http://elasticsearch.org):
+It accepts metrics in graphite format. 
+Note: if you want to append metadata tags to your metrics in elasticsearch then add the tags to your client definition in the sensu client.json.
+e.g.
+
+<pre>
+{
+  "client": {
+    "name": "myserver",
+    "environment": "TEST",
+    "address": "10.1.1.141",
+    "subscriptions": [ "linux","linux_metrics","webservers" ],
+    "tags" : { "os":"linux", "applications": [ "sensu","apache","haproxy" ], "role":"appserver" },
+    "safe_mode": false
+  }
+}
+</pre>
 
 ## Installation
 
