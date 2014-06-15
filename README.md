@@ -1,7 +1,9 @@
 # sensu-elasticsearch
 
-This repository contains a Sensu extension for [Elasticsearch](http://elasticsearch.org):
-It accepts metrics in graphite format. 
+This repository contains a Sensu extension for [Elasticsearch](http://elasticsearch.org) which accepts metrics in graphite format.
+
+It also leverages Sensu's extension module to run within the main Sensu EventMachine loop and uses elasticsearch's bulk api to send a batch of metrics for indexing. This should be helpful in environments that are indexing relatively large volumes of metrics in real-time.
+
 Note: if you want to append metadata tags to your metrics in elasticsearch then add the tags to your client definition in the sensu client.json.
 e.g.
 
